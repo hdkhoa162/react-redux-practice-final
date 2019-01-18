@@ -1,0 +1,62 @@
+@import 'global.scss';
+
+.signIn__label {     
+    margin-top: 23px;
+    text-align: right;
+    width: 48%;
+    float: left;
+    font-weight: $font-weight
+}
+
+.signIn__field {
+    margin-top: 20px;
+    width: 20%;
+    float: left;
+    margin: 20px 0 0 10px
+}
+
+.container {    
+    display: inline-block;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.signIn__submit__form {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.signIn__submit__btn {
+    margin: 30px 20px 0 20px;
+    width: 135px;
+    margin-left: 170px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    color: $white;
+    background-color: #4c73c7;
+    font-size: 18px;
+    line-height: 2px
+}
+
+.signIn {    
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 60px
+}
+
+.userName {
+    border-radius: 15px;
+    width: 200px;
+    background-color: #7d8995;
+    margin-top: -4px;
+    color: $white;
+}
+
+.userName::placeholder {
+    color: $white
+}

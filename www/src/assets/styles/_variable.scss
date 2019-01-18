@@ -1,0 +1,34 @@
+// Button
+@mixin mutualButton {
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    color: white
+}
+
+@mixin mutualStatusSuccess {
+    margin-top: 5px;
+    color: #0a2fef;
+    font-weight: bold
+}
+
+@mixin mutualStatusFail {
+    margin-top: 5px;
+    color: red;
+    font-weight: bold
+}
+
+@mixin mutualPriority {
+    margin-left: 214px;
+    font-size:18px;
+    margin-top: -26px;   
+    font-weight:bold;
+}
+// Colors    
+$sky-blue: #3cb356;
+$white: white;
+$red: red;
+$green: green;
+
+// Font
+$font-weight: bold;

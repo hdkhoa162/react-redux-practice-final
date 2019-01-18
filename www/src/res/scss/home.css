@@ -1,0 +1,31 @@
+.home {
+  display: flex; }
+  .home .list_items {
+    flex: 1;
+    padding: 1rem; }
+  .home .preview {
+    flex: 2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .home .preview h2 {
+      text-transform: capitalize;
+      margin-top: 0; }
+    .home .preview p {
+      text-align: center; }
+    .home .preview button {
+      font-size: 1rem; }
+  .home ul {
+    list-style-type: none;
+    padding: 0; }
+    .home ul li {
+      margin: 0.5rem 0; }
+      .home ul li button {
+        width: 100%;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        text-transform: capitalize; }
+        .home ul li button:hover {
+          cursor: pointer; }

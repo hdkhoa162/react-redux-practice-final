@@ -1,0 +1,12 @@
+.view_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; }
+  .view_item h2 {
+    margin-top: 3rem;
+    text-transform: capitalize; }
+  .view_item p {
+    text-align: center; }
+  .view_item button {
+    font-size: 1rem; }

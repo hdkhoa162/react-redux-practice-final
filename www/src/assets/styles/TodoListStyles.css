@@ -1,0 +1,214 @@
+.todoItem {
+  margin-left: 150px;
+  margin-top: 60px;
+  background-color: '#fbfbfb';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #d6dce036;
+  width: 68%; }
+
+.todoItem__checkList {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.todoItem__checkList__checkmark {
+  position: absolute;
+  top: 12px;
+  left: -1px;
+  height: 29px;
+  width: 29px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #eee; }
+
+.todoItem__checkList__checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
+  border: red; }
+
+.todoItem__checkList input:checked ~ .todoItem__checkList__checkmark {
+  background-color: white;
+  border-color: green; }
+
+.todoItem__checkList input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.todoItem__checkList input:checked ~ .todoItem__checkList__checkmark:after {
+  display: block; }
+
+.todoItem__checkList .todoItem__checkList__checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 12px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.todoItem__checkList__checkbox {
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  margin: 20px 10px 20px -25px;
+  border: 3px solid green;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
+
+.todoItem__row {
+  margin-top: 7px;
+  text-align: center;
+  float: left;
+  border-radius: 6px;
+  margin-left: 3px;
+  width: 99%;
+  height: 80px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: white;
+  box-shadow: #656464 0px 0px 5px 0px; }
+
+.todoItem__row__firstColumn {
+  border-bottom: 1px double gray;
+  box-shadow: 0 3px 10px -1px #480c0c;
+  width: 215px;
+  display: inline-block;
+  background-color: white;
+  height: 45px;
+  margin-left: -280px; }
+
+.todoItem__row__secondColumn {
+  width: 120px;
+  text-align: left;
+  margin-right: -87px;
+  vertical-align: -7px; }
+
+.todoItem__row__thirdColumn {
+  height: 50px;
+  text-align: left;
+  vertical-align: -7px;
+  margin-left: 500px;
+  margin-top: -32px; }
+
+.todoItem__row__high__priority {
+  margin-left: 214px;
+  font-size: 18px;
+  margin-top: -26px;
+  font-weight: bold;
+  color: red; }
+
+.todoItem__row__medium__priority {
+  margin-left: 214px;
+  font-size: 18px;
+  margin-top: -26px;
+  font-weight: bold;
+  color: purple; }
+
+.todoItem__row__low__priority {
+  margin-left: 214px;
+  font-size: 18px;
+  margin-top: -26px;
+  font-weight: bold;
+  color: #31b0d5; }
+
+.todoItem__btn {
+  width: 320px;
+  height: 50px;
+  text-align: left;
+  padding-left: 130px;
+  display: inline-block;
+  padding-left: 180px;
+  margin-top: 30px;
+  margin-left: 60px;
+  border-radius: 15px; }
+
+.todoItem__update__btn {
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+  color: white;
+  background-color: #3cb356; }
+
+.todoItem__status__success {
+  margin-left: 210px;
+  margin-top: 5px;
+  color: #0a2fef;
+  font-weight: bold; }
+
+.todoItem__status__fail {
+  margin-left: 210px;
+  margin-top: 5px;
+  color: red;
+  font-weight: bold; }
+
+.todoItem__no__update {
+  margin-left: 210px;
+  font-weight: bold; }
+
+.remove__btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: 5px;
+  background-color: #2185d0;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: white;
+  margin-top: 5px; }
+
+.todoItem__row__startAt {
+  margin-left: 287px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 50px;
+  margin-top: -38px; }
+
+.todoIndex {
+  float: center;
+  width: 900px;
+  text-align: left;
+  margin-left: 500px; }
+
+.todoIndex__datePicker {
+  margin-left: 440px; }
+
+.todoIndex__title {
+  padding-left: 400px; }
+
+.break {
+  padding-left: 420px; }
+
+.todoIndex__selectedDate__datePicker {
+  display: inline;
+  float: left;
+  margin-left: 50px; }
+
+.todoIndex__selectedDate {
+  font-size: 20px;
+  margin-left: 230px;
+  float: left;
+  font-weight: bold; }
+
+.noData {
+  margin-left: 180px;
+  font-weight: bold;
+  font-size: 20px;
+  color: red; }
