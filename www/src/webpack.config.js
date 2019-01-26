@@ -4,8 +4,16 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpackDefinePlugin = new webpack.DefinePlugin({
-    __DEV__: process.env.NODE_ENV !== 'development',
-    'process.env.NODE_ENV': JSON.stringify('development'),
+    'process.env': {
+        "NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+        "APP_NAME": JSON.stringify(process.env.APP_NAME),
+        "APP_TITLE": JSON.stringify(process.env.APP_TITLE),
+        "APP_VERSION": JSON.stringify(process.env.APP_VERSION),
+        "WWW_PORT": JSON.stringify(process.env.WWW_PORT),
+        "DATA_API_URL": JSON.stringify(process.env.DATA_API_URL)
+    },
+    __DEV__: process.env.NODE_ENV !== 'production',
+    'process.env.NODE_ENV': process.env.NODE_ENV/*JSON.stringify('development')*/,
     'process.env.APP_VERSION': JSON.stringify(process.env.APP_VERSION),
 });
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
