@@ -16,7 +16,7 @@ import controllers from './app/controllers';
 const routers = (() => {
 	
 	const ExpressRouter = express.Router();
-	const credentials = { username: 'khoa162', password: 'khoa1621992' };
+	const credentials = { username: 'admin', password: '123123123' };
 
 	const isAuthenticated = (request, response, next) => {		
 		return jwt.verify(

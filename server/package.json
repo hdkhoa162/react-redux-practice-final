@@ -1,7 +1,7 @@
 {
   "name": "Practice",
   "version": "0.0.1",
-  "license": "ISC",  
+  "license": "ISC",
   "author": "Khoa Huynh",
   "private": true,
   "main": "app.js",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "prestart": "npm run -s build",
-    "start": "nodemon ./bin/www/ --exec \"node -r dotenv/config -r babel-register\" | bunyan",  
+    "start": "nodemon ./bin/www/ --exec \"node -r dotenv/config -r babel-register\" | bunyan",
     "clean": "rimraf dist",
     "build": "npm run clean && mkdir dist && babel ./ -s -D -d dist --ignore ./node_modules,./package.json,./package-lock.json,./npm-debug.log,README.md",
     "test": "jest --watch",
@@ -30,6 +30,7 @@
     "eslint"
   ],
   "dependencies": {
+    "ajv-keywords": "^2.1.1",
     "async": "^2.5.0",
     "aws-sdk": "^2.148.0",
     "axios": "^0.17.1",
@@ -49,6 +50,7 @@
     "fs": "0.0.1-security",
     "js-shortid": "^0.1.1",
     "json-server": "^0.12.1",
+    "jsonwebtoken": "^8.3.0",
     "jwt-simple": "^0.5.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
@@ -57,8 +59,7 @@
     "nodemailer-ses-transport": "^1.5.1",
     "skipper-better-s3": "^2.2.1",
     "underscore": "^1.8.3",
-    "uuid": "^3.1.0",
-    "jsonwebtoken": "^8.3.0"
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with ExpressJS server",
   "main": "src/index.js",
-  "scripts": {    
+  "scripts": {
     "clean": "rimraf dist/",
     "build:css": "node-sass-chokidar --include-path ./node_modules ./src/ -o ./src/",
     "build:bundle": "webpack --mode development --config ./src/webpack.config.js",
-    "build": "env-cmd development npm-run-all clean build:bundle build:css",    
+    "build": "env-cmd development npm-run-all clean build:bundle build:css",
     "watch:server": "nodemon --watch ./src/**/* --exec babel-node --presets @babel/preset-env ./react-server/"
   },
   "dependencies": {
