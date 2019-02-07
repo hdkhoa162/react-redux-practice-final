@@ -1,5 +1,5 @@
 /***
- * Copyright 2017 @SexyBeastDating
+ * Copyright 2018 @Practice
  * Author: Khoa Huynh
  * Date: 30/07/2017
  * File: app/helpers/logger.js
